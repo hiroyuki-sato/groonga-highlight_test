@@ -11,7 +11,6 @@ highlight_htmlを使うと遅い
 ## ファイル構成
 
 ```
-hsato-mbp:groonga-highlight_test hsato$ tree
 .
 |-- Makefile             # Makefile
 |-- README.md            # 本文書
@@ -172,7 +171,6 @@ Slow Queries:
 ```
 
 ## 速いクエリ
-
 
 ```
 Summary:
