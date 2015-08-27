@@ -1,0 +1,9 @@
+table_create --name Data --flags TABLE_HASH_KEY --key_type ShortText
+column_create --table Data --name article --type ShortText
+column_create --table Data --name line_no --type UInt32
+
+table_create --name DataIndex --flags TABLE_PAT_KEY --key_type ShortText --default_tokenizer TokenBigram --normalizer NormalizerAuto
+column_create --table DataIndex --name article_index --flags COLUMN_INDEX|WITH_POSITION --type Data --source article
+
+
+
