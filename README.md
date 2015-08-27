@@ -8,6 +8,11 @@
 
 highlight_htmlを使うと遅い
 
+## 環境
+
+* OS: OSX 10.10.5
+* Groonga: 5.0.6
+
 ## ファイル構成
 
 ```
@@ -61,16 +66,19 @@ make clean
 
 ### 遅いクエリ
 
+```
 real	0m50.543s
 user	0m47.406s
 sys	0m2.926s
+```
 
 ### 速いクエリ
 
+```
 real	0m0.293s
 user	0m0.112s
 sys	0m0.037s
-
+```
 
 ## クエリ
 
