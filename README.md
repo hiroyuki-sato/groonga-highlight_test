@@ -6,7 +6,8 @@
 
 ## 問題点
 
-highlight_htmlを使うと遅い
+* highlight_htmlを使うと遅い
+* 1回しかクエリをしていないのにサーバで2回クエリをすることがある
 
 ## 環境
 
@@ -23,13 +24,18 @@ highlight_htmlを使うと遅い
 |   |-- highlight.log    # 遅いログ
 |   `-- no_highlight.log # 速いログ
 |-- data                 # データファイルディレクトリ
-|   `-- data.txt         # データファイル
+|   `-- single.txt       # データファイル
 |-- database             # データベースディレクトリ
+|-- grn_cli_test.rb      # 2回クエリ確認スクリプト
 |-- groonga.txt          # 遅いクエリ(highlight_htmlあり)
 |-- groonga2.txt         # 速いクエリ(highlight_htmlなし)
 |-- load.rb              # データロードスクリプト
+|-- log_archives         # ログディレクトリ(調査用)
+|   |-- groonga.log.twice_query        # ログデータ2回クエリ
+|   `-- groonga-client.log.twice_query # ログデータ(クライアント側)
 |-- log                  # ログディレクトリ
-`-- schema.txt           # スキーマファイル
+|-- schema.txt           # スキーマファイル
+`-- server.sh            # サーバ起動ファイル
 ```
 
 ## 使い方
@@ -55,6 +61,13 @@ make normal
 ```
 
 * groonga2.txtを実行します。
+
+### 2回クエリの実行
+
+```
+./server.sh
+ruby grn_cli_test.rb
+```
 
 ### データ削除
 
