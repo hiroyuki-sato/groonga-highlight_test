@@ -1,0 +1,136 @@
+Summary:
+  Threshold:
+    slow response     : 0.2
+    slow operation    : 0.1
+  # of responses      : 2
+  # of slow responses : 2
+  responses/sec       : 0.007890312972025646
+  start time          : 2015-09-03 14:27:37.4
+  last time           : 2015-09-03 14:31:50.4
+  period(sec)         : 253.47537
+  slow response ratio : 100.000%
+  total response time : 304.177735
+  Slow Operations:
+    [301.894972](99.25%) [2](33.33%)    output: _key,highlight_html(article),line_no
+    [  1.190019]( 0.39%) [2](33.33%)    filter: query: ( あいこ OR あかり OR ありま OR いつお OR うらら OR かおり OR かとう OR かなえ OR かなめ OR きよこ OR きよみ OR こずえ OR しげこ OR すずき  OR せいこ OR せんだ OR たいじ OR たけお OR たまえ OR ちゃん OR ちょこ OR とよこ OR ながの OR のぼる OR のむら OR まこと OR みどり OR みやこ OR みゆき OR よしの OR よしみ OR 健次郎 OR 利根川 OR 千々石 OR 千鶴子 OR 大久保 OR 大河原 OR 威海衛 OR 宇都宮 OR 小石川 OR 江田島 OR 海江田 OR 西久保 OR 高千穂 OR こうへい OR こうめい ) OR (line_no:>1 + line_no:<300)
+    [  0.998199]( 0.33%) [2](33.33%)    filter: 
+
+Slow Queries:
+1) [2015-09-03 14:29:17.4-2015-09-03 14:31:50.4 (153.45818500)](0): /d/select?command_version=2&limit=-1&match_columns=article&output_columns=_key%2Chighlight_html%28article%29%2Cline_no&query=%28+%E3%81%82%E3%81%84%E3%81%93+OR+%E3%81%82%E3%81%8B%E3%82%8A+OR+%E3%81%82%E3%82%8A%E3%81%BE+OR+%E3%81%84%E3%81%A4%E3%81%8A+OR+%E3%81%86%E3%82%89%E3%82%89+OR+%E3%81%8B%E3%81%8A%E3%82%8A+OR+%E3%81%8B%E3%81%A8%E3%81%86+OR+%E3%81%8B%E3%81%AA%E3%81%88+OR+%E3%81%8B%E3%81%AA%E3%82%81+OR+%E3%81%8D%E3%82%88%E3%81%93+OR+%E3%81%8D%E3%82%88%E3%81%BF+OR+%E3%81%93%E3%81%9A%E3%81%88+OR+%E3%81%97%E3%81%92%E3%81%93+OR+%E3%81%99%E3%81%9A%E3%81%8D++OR+%E3%81%9B%E3%81%84%E3%81%93+OR+%E3%81%9B%E3%82%93%E3%81%A0+OR+%E3%81%9F%E3%81%84%E3%81%98+OR+%E3%81%9F%E3%81%91%E3%81%8A+OR+%E3%81%9F%E3%81%BE%E3%81%88+OR+%E3%81%A1%E3%82%83%E3%82%93+OR+%E3%81%A1%E3%82%87%E3%81%93+OR+%E3%81%A8%E3%82%88%E3%81%93+OR+%E3%81%AA%E3%81%8C%E3%81%AE+OR+%E3%81%AE%E3%81%BC%E3%82%8B+OR+%E3%81%AE%E3%82%80%E3%82%89+OR+%E3%81%BE%E3%81%93%E3%81%A8+OR+%E3%81%BF%E3%81%A9%E3%82%8A+OR+%E3%81%BF%E3%82%84%E3%81%93+OR+%E3%81%BF%E3%82%86%E3%81%8D+OR+%E3%82%88%E3%81%97%E3%81%AE+OR+%E3%82%88%E3%81%97%E3%81%BF+OR+%E5%81%A5%E6%AC%A1%E9%83%8E+OR+%E5%88%A9%E6%A0%B9%E5%B7%9D+OR+%E5%8D%83%E3%80%85%E7%9F%B3+OR+%E5%8D%83%E9%B6%B4%E5%AD%90+OR+%E5%A4%A7%E4%B9%85%E4%BF%9D+OR+%E5%A4%A7%E6%B2%B3%E5%8E%9F+OR+%E5%A8%81%E6%B5%B7%E8%A1%9B+OR+%E5%AE%87%E9%83%BD%E5%AE%AE+OR+%E5%B0%8F%E7%9F%B3%E5%B7%9D+OR+%E6%B1%9F%E7%94%B0%E5%B3%B6+OR+%E6%B5%B7%E6%B1%9F%E7%94%B0+OR+%E8%A5%BF%E4%B9%85%E4%BF%9D+OR+%E9%AB%98%E5%8D%83%E7%A9%82+OR+%E3%81%93%E3%81%86%E3%81%B8%E3%81%84+OR+%E3%81%93%E3%81%86%E3%82%81%E3%81%84+%29+OR+%28line_no%3A%3E1+%2B+line_no%3A%3C300%29&table=Data  name: <select>
+  parameters:
+    <command_version>: <2>
+    <limit>: <-1>
+    <match_columns>: <article>
+    <output_columns>: <_key,highlight_html(article),line_no>
+    <query>: <( あいこ OR あかり OR ありま OR いつお OR うらら OR かおり OR かとう OR かなえ OR かなめ OR きよこ OR きよみ OR こずえ OR しげこ OR すずき  OR せいこ OR せんだ OR たいじ OR たけお OR たまえ OR ちゃん OR ちょこ OR とよこ OR ながの OR のぼる OR のむら OR まこと OR みどり OR みやこ OR みゆき OR よしの OR よしみ OR 健次郎 OR 利根川 OR 千々石 OR 千鶴子 OR 大久保 OR 大河原 OR 威海衛 OR 宇都宮 OR 小石川 OR 江田島 OR 海江田 OR 西久保 OR 高千穂 OR こうへい OR こうめい ) OR (line_no:>1 + line_no:<300)>
+    <table>: <Data>
+  1) 0.55573300:     filter(1277220) query: ( あいこ OR あかり OR ありま OR いつお OR うらら OR かおり OR かとう OR かなえ OR かなめ OR きよこ OR きよみ OR こずえ OR しげこ OR すずき  OR せいこ OR せんだ OR たいじ OR たけお OR たまえ OR ちゃん OR ちょこ OR とよこ OR ながの OR のぼる OR のむら OR まこと OR みどり OR みやこ OR みゆき OR よしの OR よしみ OR 健次郎 OR 利根川 OR 千々石 OR 千鶴子 OR 大久保 OR 大河原 OR 威海衛 OR 宇都宮 OR 小石川 OR 江田島 OR 海江田 OR 西久保 OR 高千穂 OR こうへい OR こうめい ) OR (line_no:>1 + line_no:<300)
+  2) 0.48875300:     filter(  8940)
+  3) 0.00086900:     filter(  9090)
+  4) 0.00147800:     filter(  9840)
+  5) 0.00458100:     filter( 14790)
+  6) 0.00078000:     filter( 15090)
+  7) 0.00021800:     filter( 15240)
+  8) 0.00083700:     filter( 15840)
+  9) 0.00110900:     filter( 16140)
+ 10) 0.00068600:     filter( 16290)
+ 11) 0.00076900:     filter( 16440)
+ 12) 0.00026900:     filter( 16590)
+ 13) 0.00033300:     filter( 16890)
+ 14) 0.00018700:     filter( 17190)
+ 15) 0.00042800:     filter( 17790)
+ 16) 0.00022200:     filter( 17940)
+ 17) 0.00040700:     filter( 18090)
+ 18) 0.00127400:     filter( 18390)
+ 19) 0.00084200:     filter( 18690)
+ 20) 0.00039500:     filter( 19110)
+ 21) 0.00187400:     filter( 21510)
+ 22) 0.00128200:     filter( 23550)
+ 23) 0.00071100:     filter( 23850)
+ 24) 0.00039500:     filter( 24000)
+ 25) 0.00111600:     filter( 24300)
+ 26) 0.00015500:     filter( 24450)
+ 27) 0.00038900:     filter( 24900)
+ 28) 0.00087500:     filter( 25200)
+ 29) 0.00029400:     filter( 25500)
+ 30) 0.00028100:     filter( 25650)
+ 31) 0.00015400:     filter( 25800)
+ 32) 0.00055000:     filter( 26100)
+ 33) 0.00058700:     filter( 26400)
+ 34) 0.00010500:     filter( 26520)
+ 35) 0.00011500:     filter( 26670)
+ 36) 0.00212500:     filter( 26790)
+ 37) 0.00202200:     filter( 30990)
+ 38) 0.00026700:     filter( 31440)
+ 39) 0.00010100:     filter( 31590)
+ 40) 0.00038100:     filter( 32340)
+ 41) 0.00010600:     filter( 32490)
+ 42) 0.00024500:     filter( 32940)
+ 43) 0.00025100:     filter( 33360)
+ 44) 0.00011300:     filter( 33510)
+ 45) 0.00011400:     filter( 33660)
+ 46) 0.00010400:     filter( 33810)
+ 47) 0.00063400:     filter( 33960)
+ 48) 0.00059800:     filter( 34110)
+ 49) 0.00003000:     select( 34110)
+ 50) 152.37135100:     output( 34110) _key,highlight_html(article),line_no
+
+2) [2015-09-03 14:27:37.4-2015-09-03 14:30:07.4 (150.71955000)](0): /d/select?command_version=2&limit=-1&match_columns=article&output_columns=_key%2Chighlight_html%28article%29%2Cline_no&query=%28+%E3%81%82%E3%81%84%E3%81%93+OR+%E3%81%82%E3%81%8B%E3%82%8A+OR+%E3%81%82%E3%82%8A%E3%81%BE+OR+%E3%81%84%E3%81%A4%E3%81%8A+OR+%E3%81%86%E3%82%89%E3%82%89+OR+%E3%81%8B%E3%81%8A%E3%82%8A+OR+%E3%81%8B%E3%81%A8%E3%81%86+OR+%E3%81%8B%E3%81%AA%E3%81%88+OR+%E3%81%8B%E3%81%AA%E3%82%81+OR+%E3%81%8D%E3%82%88%E3%81%93+OR+%E3%81%8D%E3%82%88%E3%81%BF+OR+%E3%81%93%E3%81%9A%E3%81%88+OR+%E3%81%97%E3%81%92%E3%81%93+OR+%E3%81%99%E3%81%9A%E3%81%8D++OR+%E3%81%9B%E3%81%84%E3%81%93+OR+%E3%81%9B%E3%82%93%E3%81%A0+OR+%E3%81%9F%E3%81%84%E3%81%98+OR+%E3%81%9F%E3%81%91%E3%81%8A+OR+%E3%81%9F%E3%81%BE%E3%81%88+OR+%E3%81%A1%E3%82%83%E3%82%93+OR+%E3%81%A1%E3%82%87%E3%81%93+OR+%E3%81%A8%E3%82%88%E3%81%93+OR+%E3%81%AA%E3%81%8C%E3%81%AE+OR+%E3%81%AE%E3%81%BC%E3%82%8B+OR+%E3%81%AE%E3%82%80%E3%82%89+OR+%E3%81%BE%E3%81%93%E3%81%A8+OR+%E3%81%BF%E3%81%A9%E3%82%8A+OR+%E3%81%BF%E3%82%84%E3%81%93+OR+%E3%81%BF%E3%82%86%E3%81%8D+OR+%E3%82%88%E3%81%97%E3%81%AE+OR+%E3%82%88%E3%81%97%E3%81%BF+OR+%E5%81%A5%E6%AC%A1%E9%83%8E+OR+%E5%88%A9%E6%A0%B9%E5%B7%9D+OR+%E5%8D%83%E3%80%85%E7%9F%B3+OR+%E5%8D%83%E9%B6%B4%E5%AD%90+OR+%E5%A4%A7%E4%B9%85%E4%BF%9D+OR+%E5%A4%A7%E6%B2%B3%E5%8E%9F+OR+%E5%A8%81%E6%B5%B7%E8%A1%9B+OR+%E5%AE%87%E9%83%BD%E5%AE%AE+OR+%E5%B0%8F%E7%9F%B3%E5%B7%9D+OR+%E6%B1%9F%E7%94%B0%E5%B3%B6+OR+%E6%B5%B7%E6%B1%9F%E7%94%B0+OR+%E8%A5%BF%E4%B9%85%E4%BF%9D+OR+%E9%AB%98%E5%8D%83%E7%A9%82+OR+%E3%81%93%E3%81%86%E3%81%B8%E3%81%84+OR+%E3%81%93%E3%81%86%E3%82%81%E3%81%84+%29+OR+%28line_no%3A%3E1+%2B+line_no%3A%3C300%29&table=Data  name: <select>
+  parameters:
+    <command_version>: <2>
+    <limit>: <-1>
+    <match_columns>: <article>
+    <output_columns>: <_key,highlight_html(article),line_no>
+    <query>: <( あいこ OR あかり OR ありま OR いつお OR うらら OR かおり OR かとう OR かなえ OR かなめ OR きよこ OR きよみ OR こずえ OR しげこ OR すずき  OR せいこ OR せんだ OR たいじ OR たけお OR たまえ OR ちゃん OR ちょこ OR とよこ OR ながの OR のぼる OR のむら OR まこと OR みどり OR みやこ OR みゆき OR よしの OR よしみ OR 健次郎 OR 利根川 OR 千々石 OR 千鶴子 OR 大久保 OR 大河原 OR 威海衛 OR 宇都宮 OR 小石川 OR 江田島 OR 海江田 OR 西久保 OR 高千穂 OR こうへい OR こうめい ) OR (line_no:>1 + line_no:<300)>
+    <table>: <Data>
+  1) 0.63428600:     filter(1277220) query: ( あいこ OR あかり OR ありま OR いつお OR うらら OR かおり OR かとう OR かなえ OR かなめ OR きよこ OR きよみ OR こずえ OR しげこ OR すずき  OR せいこ OR せんだ OR たいじ OR たけお OR たまえ OR ちゃん OR ちょこ OR とよこ OR ながの OR のぼる OR のむら OR まこと OR みどり OR みやこ OR みゆき OR よしの OR よしみ OR 健次郎 OR 利根川 OR 千々石 OR 千鶴子 OR 大久保 OR 大河原 OR 威海衛 OR 宇都宮 OR 小石川 OR 江田島 OR 海江田 OR 西久保 OR 高千穂 OR こうへい OR こうめい ) OR (line_no:>1 + line_no:<300)
+  2) 0.50944600:     filter(  8940)
+  3) 0.00138100:     filter(  9090)
+  4) 0.00163500:     filter(  9840)
+  5) 0.00434900:     filter( 14790)
+  6) 0.00093700:     filter( 15090)
+  7) 0.00028200:     filter( 15240)
+  8) 0.00091900:     filter( 15840)
+  9) 0.00128900:     filter( 16140)
+ 10) 0.00066500:     filter( 16290)
+ 11) 0.00109600:     filter( 16440)
+ 12) 0.00079700:     filter( 16590)
+ 13) 0.00041900:     filter( 16890)
+ 14) 0.00041300:     filter( 17190)
+ 15) 0.00077200:     filter( 17790)
+ 16) 0.00041400:     filter( 17940)
+ 17) 0.00066200:     filter( 18090)
+ 18) 0.00235400:     filter( 18390)
+ 19) 0.00131900:     filter( 18690)
+ 20) 0.00056000:     filter( 19110)
+ 21) 0.00247800:     filter( 21510)
+ 22) 0.00152400:     filter( 23550)
+ 23) 0.00089200:     filter( 23850)
+ 24) 0.00048700:     filter( 24000)
+ 25) 0.00127000:     filter( 24300)
+ 26) 0.00021600:     filter( 24450)
+ 27) 0.00047200:     filter( 24900)
+ 28) 0.00099900:     filter( 25200)
+ 29) 0.00036200:     filter( 25500)
+ 30) 0.00030700:     filter( 25650)
+ 31) 0.00019700:     filter( 25800)
+ 32) 0.00055900:     filter( 26100)
+ 33) 0.00072100:     filter( 26400)
+ 34) 0.00016600:     filter( 26520)
+ 35) 0.00015300:     filter( 26670)
+ 36) 0.00528700:     filter( 26790)
+ 37) 0.00358600:     filter( 30990)
+ 38) 0.00052800:     filter( 31440)
+ 39) 0.00015600:     filter( 31590)
+ 40) 0.00049700:     filter( 32340)
+ 41) 0.00016600:     filter( 32490)
+ 42) 0.00029000:     filter( 32940)
+ 43) 0.00040700:     filter( 33360)
+ 44) 0.00015800:     filter( 33510)
+ 45) 0.00016100:     filter( 33660)
+ 46) 0.00020800:     filter( 33810)
+ 47) 0.00067900:     filter( 33960)
+ 48) 0.00056200:     filter( 34110)
+ 49) 0.00002800:     select( 34110)
+ 50) 149.52362100:     output( 34110) _key,highlight_html(article),line_no
+
